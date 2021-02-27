@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+
+<body>
+
+  <div class="inputs">
+    <input type="checkbox" id="check1" name="check1" value="supress">
+    <input type="range" min="1" max="360" value="0" class="slider slider1" id="camada1">
+    <br>
+    <input type="checkbox" id="check2" name="check2" value="supress">
+    <input type="range" min="1" max="360" value="0" class="slider slider2" id="camada2">
+    <br>
+    <input type="checkbox" id="check3" name="check3" value="supress">
+    <input type="range" min="1" max="360" value="0" class="slider slider3" id="camada3">
+    <br>
+    <input type="checkbox" id="check4" name="check4" value="supress">
+    <input type="range" min="1" max="360" value="0" class="slider slider4" id="camada4">
+  </div>
+
+  <div class="rodas">
+    <div class="roda-roda">
+      <img class="roda1" id="roda1" src="imgs/grupo2/grupo2 01.png">
+    </div>
+    <div class="roda-roda">
+      <img class="roda2" id="roda2" src="imgs/grupo2/grupo2 02.png">
+    </div>
+    <div class="roda-roda">
+      <img class="roda3" id="roda3" src="imgs/grupo2/grupo2 03.png">
+    </div>
+    <div class="roda-roda">
+      <img class="roda4" id="roda4" src="imgs/grupo2/grupo2 04.png">
+    </div>
+  </div>
+
+
+<script>
+// RODA 1
+// slider
+var slider1 = document.getElementById("camada1");
+document.getElementById("roda1").style.transform = "rotate(" + slider1.value + "deg)";
+
+slider1.oninput = function() {
+  document.getElementById("roda1").style.transform = "rotate(" + slider1.value + "deg)";
+}
+
+// checkbox
+$('#check1').change(function(){
+    if($(this).is(":checked")) {
+        $('.roda1').addClass('hide');
+    } else {
+        $('.roda1').removeClass('hide');
+    }
+});
+
+// RODA 2
+// slider
+var slider2 = document.getElementById("camada2");
+document.getElementById("roda2").style.transform = "rotate(" + slider2.value + "deg)";
+
+slider2.oninput = function() {
+  document.getElementById("roda2").style.transform = "rotate(" + slider2.value + "deg)";
+}
+
+// checkbox
+$('#check2').change(function(){
+    if($(this).is(":checked")) {
+        $('.roda2').addClass('hide');
+    } else {
+        $('.roda2').removeClass('hide');
+    }
+});
+
+// RODA 3
+// slider
+var slider3 = document.getElementById("camada3");
+document.getElementById("roda3").style.transform = "rotate(" + slider3.value + "deg)";
+
+slider3.oninput = function() {
+  document.getElementById("roda3").style.transform = "rotate(" + slider3.value + "deg)";
+}
+
+// checkbox
+$('#check3').change(function(){
+    if($(this).is(":checked")) {
+        $('.roda3').addClass('hide');
+    } else {
+        $('.roda3').removeClass('hide');
+    }
+});
+
+// RODA 4
+// slider
+var slider4 = document.getElementById("camada4");
+document.getElementById("roda4").style.transform = "rotate(" + slider4.value + "deg)";
+
+slider4.oninput = function() {
+  document.getElementById("roda4").style.transform = "rotate(" + slider4.value + "deg)";
+}
+
+// checkbox
+$('#check4').change(function(){
+    if($(this).is(":checked")) {
+        $('.roda4').addClass('hide');
+    } else {
+        $('.roda4').removeClass('hide');
+    }
+});
+</script>
+
+</body>
+</html>

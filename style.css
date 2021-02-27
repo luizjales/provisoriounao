@@ -1,0 +1,66 @@
+body {
+  overflow: hidden;
+  height: 100vh;
+}
+
+.link-grupo {
+  height: 50vh;
+  width: 100vw;
+  align-content: center;
+  display: flex;
+  text-align: center;
+}
+
+.titulo-grupo {
+  font-family: sans-serif;
+  margin: auto;
+  color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.grupo-01 {
+  background-color: #e89f14;
+}
+
+.grupo-02 {
+  background-color: #9ad4dc;
+}
+
+.display {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.inputs {
+  padding: 15px 25px;
+  z-index: 1000;
+}
+
+.slider {
+  width: 90%;
+}
+
+img {
+  width: 600px;
+  max-width: 100%;
+}
+
+.rodas {
+  margin: auto;
+  height: 100%;
+}
+
+.roda-roda {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding-top: 25px;
+}
